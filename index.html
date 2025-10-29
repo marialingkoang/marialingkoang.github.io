@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Demo</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran DEMO TOLAK TUNJANGAN DPR</h2>
+    
+    <form>
+        <!-- Fieldset & Legend -->
+        <fieldset>
+            <legend>Data Diri</legend>
+            
+            <!-- Label + Input -->
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" /><br /><br />
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br /><br />
+            
+            <!-- Radio Button -->
+            <label>Jenis Kelamin:</label><br />
+            <input type="radio" id="laki" name="gender" value="Laki-laki" />
+            <label for="laki">Laki-laki</label><br />
+            
+            <input type="radio" id="perempuan" name="gender" value="Perempuan" />
+            <label for="perempuan">Perempuan</label><br /><br />
+            
+            <!-- Datalist -->
+            <label for="kota">Asal Kota:</label>
+            <input list="daftarKota" id="kota" name="kota" />
+            <datalist id="daftarKota">
+                <option value="Jakarta">
+                <option value="Manado">
+                <option value="Surabaya">
+                <option value="Bandung">
+            </datalist>
+            <br /><br />
+            
+            <!-- Checkbox -->
+            <label>
+                <input type="checkbox" name="persetujuan" /> Saya setuju dengan syarat & ketentuan
+            </label>
+            <br /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferensi Demo</legend>
+            
+            <!-- Select + Optgroup + Option -->
+            <label for="transport">Transportasi:</label>
+            <select id="transport" name="transport">
+                <optgroup label="Transportasi Umum">
+                    <option value="bus">Bus</option>
+                    <option value="kereta">Kereta</option>
+                </optgroup>
+                <optgroup label="Transportasi Pribadi">
+                    <option value="motor">Motor</option>
+                    <option value="mobil">Mobil</option>
+                </optgroup>
+            </select>
+            <br /><br />
+            
+            <!-- Meter -->
+            <label for="partisipasi">Tingkat Partisipasi:</label>
+            <meter id="partisipasi" value="0.6" min="0" max="1">60%</meter>
+            <br /><br />
+            
+            <!-- Progress -->
+            <label for="progress">Progress Pengisian:</label>
+            <progress id="progress" value="70" max="100">70%</progress>
+            <br /><br />
+            
+            <!-- Output -->
+            <label for="jumlah">Jumlah Peserta:</label>
+            <input type="number" id="jumlah" name="jumlah" value="10" 
+                   oninput="hasil.value = jumlah.value * 2" />
+            <output name="hasil">20</output>
+            <br /><br />
+            
+            <!-- Textarea -->
+            <label for="pesan">Pesan / Saran:</label><br />
+            <textarea id="pesan" name="pesan" rows="4" cols="40" placeholder="Tulis pesan atau saran Anda di sini..."></textarea>
+            <br /><br />
+        </fieldset>
+        
+        <!-- Button -->
+        <button type="submit">Daftar</button>
+        <button type="reset">Reset</button>
+    </form>
+    
+    <br />
+    <a href="index.html">Kembali ke Halaman Utama</a>
+</body>
+</html>

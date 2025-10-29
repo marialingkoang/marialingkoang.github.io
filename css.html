@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Workshop</title>
+
+<style>
+    /* Styling Umum*/
+    body {
+        background-color: antiquewhite;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Judul */
+    .Judul {
+        color: rgb(110, 162, 234);
+        text-align: center;
+        font-size: 32px;
+    }
+
+    /* paragraf */
+    .deskripsi {
+        text-indent: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+        font-weight: bold;
+        text-decoration: underline;
+        line-height: 1,6;
+    }
+</style>
+</head>
+
+    <h1 class="Judul" >Formulir Pendaftaran Workshop HTML (UJIAN PRAKTEK WEB DESIGN) </h1>
+
+
+
+<br>
+
+    <h4>Workshop ini ditujukan untuk memperkenalkan dasar-dasar HTML hingga pembuatan form. Silahkan isi formulir dibawah ini untuk mendaftar sebagai peserta.</h4>
+    <u><a href="tabel.html">Tentang</a></u> |
+    <u><a href="form.html">Kontak</a></u><br></br>
+    <h3><b>Jadwal Workshop</b></h3>
+    <table border="3">
+    <tr>
+        <th>Tanggal</th>
+        <th>Waktu</th>
+        <th>Materi</th>
+    </tr>
+    <tr>
+        <td>1 September 2025</td>
+        <td>09:00 - 11:00</td>
+        <td>Pengenalan HTML</td>
+    </tr>
+    <tr>
+        <td>2 September 2025</td>
+        <td>09:00 - 11:00</td>
+        <td>HTML Lanjutan</td>
+    </tr>
+    <tr>
+        <td>3 September 2025</td>
+        <td>09:00 - 11:00</td>
+        <td>Praktik Form</td>
+    </tr>
+
+</table>
+<br></br>
+<fieldset>
+  <label><b>Data Peserta</b></label><br></br>
+  <label><b>Nama Lengkap :</b><input type="text"></label><br></br>
+  <label><b>Email :</b><input type="text"></label><br></br>
+  <label><b>Password :</b><input type="text"></label><br></br>
+<label><b>Jenis Kelamin :</b></label>  
+<input type="radio" name="jk" value="Laki-laki"/><b>Laki-laki</b>
+<input type="radio" name="jk" value="Perempuan"/><b>Perempuan</b>
+<br></br>
+<label><b>Pilih Materi Tambahan :</b></label><br></br> 
+<input type="checkbox" name="jk" value="Laki-laki"/><b>Materi Lanjutan</b><br></br>
+<input type="checkbox" name="jk" value="Perempuan"/><b>Sertifikat</b>
+<br></br>
+<label for="kota"><b>Pilih Kota :</b></label>
+<select id="kota">
+  <optgroup label="Jawa">
+    <option>Jakarta</option>
+    <option>Bandung</option>
+    <option>Surabaya</option>
+  </optgroup>
+  <optgroup label="Luar Jawa">
+    <option>Medan</option>
+    <option>Makassar</option>
+    <option>Balikpapan</option>
+  </optgroup>
+</select>
+<br></br>
+<label><b>Pilih Mentor :</b> <input type="text"></label>
+<br></br>
+<label><b>Catatan Tambahan :</b></label><br></br>
+<textarea name="" id="" cols="70" rows="10"></textarea>
+<br></br>
+<label for="progress"><b>Progress Pendaftaran</b> :</label>
+<progress id="progress" value="100" max="200">100%</progress>
+<br></br>
+<label for="html"><b>Tingkat Kepuasan Awal :</b></label>
+<meter value="7" min="0" max="10"></meter>
+<br></br>
+<button type="submit">Kirim</button>
+<button type="reset">Reset</button>
+</fieldset>
+
+
+
+
+
+
+</body>
+</html>
